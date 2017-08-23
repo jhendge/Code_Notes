@@ -1,0 +1,4 @@
+## when spinning up an Oracle 6.7 Linux instance in Oracle Cloud and then installing HDP (http://wp.huangshiyang.com/hortonworks-installer-rhelcentosoracle-linux-6), there will be a permissions issue with Hiveserver2 that will need to be addressed using the following command 
+
+
+hdfs dfs -chown -R root:hdfs /user/root
